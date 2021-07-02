@@ -1,11 +1,51 @@
 @import "vendors/bootstrap/bootstrap.less";
 @import "vendors/font-awesome/font-awesome.less";
 
-body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
+@primary: #0383c0;
 
 .navbar {
   margin-bottom: 20px;
+  margin-top: 30px;
+  background: #0383c0 url(../img/navbar.png) repeat-x;
+  border: 1px #ccc solid;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default a:hover {
+  background: none;
+  color: @primary !important;
+  font-weight: bold;
+}
+
+.logo {
+  width: 100%;
+  margin: 40px 0 0 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.primary {
+  color: @primary;
+}
+
+.subtext {
+  color: #666;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 0 45px;
+}
+
+header form {
+  float: right;
+  margin-top: 30px;
+  background: @primary;
+  padding: 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+#products img {
+  width: 130px;
+  height: 130px;
 }
